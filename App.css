@@ -1,0 +1,139 @@
+/* Centrado del botón en la tarjeta de la bicicleta */
+.bike-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar todas las tarjetas horizontalmente */
+  padding: 2rem;
+}
+
+.bike-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centramos el contenido dentro de la tarjeta */
+  align-items: center;      /* Centramos horizontalmente */
+  text-align: center;       /* Asegura que el texto y el botón se alineen correctamente */
+}
+
+.bike-card:hover {
+  transform: scale(1.05);
+}
+
+.bike-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.bike-card button {
+  margin-top: 1.5rem;  /* Añadir margen superior para separar el botón del texto */
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;        /* Ajustar el ancho del botón */
+  text-align: center;  /* Asegura que el texto del botón esté centrado */
+}
+
+.bike-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #007bff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de toggle */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.toggle-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.toggle-button:active {
+  transform: scale(0.95);
+}
+
+/* Formulario */
+form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  margin-bottom: 1rem;
+}
+
+form input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
